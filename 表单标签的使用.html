@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单标签的学习</title>
+	</head>
+	<body>
+
+		<h3>input控件的使用(重点)</h3>
+		用户名:
+		<input type="text" value="用户名">  
+
+		<!-- text ="单行文本输入框" --> <br>
+		
+		密码:
+		<input type="password" maxlength="6">  
+
+		<!-- password ="密码输入框" ctrl+/ 注释的快捷键
+		     maxlength ="控件允许输入的最多字符数" -->  <br>
+		
+		性别:
+		<input type="radio" name="sex" checked="checked">女  
+		<input type="radio" name="sex">男  
+
+		<!-- radio ="单选按钮"; 
+		     name ="这里面的name表示控件的名称";
+		     如果是一组，我们通过相同的name值来实现
+		     checked ="定义选择控件默认被选中的项"" -->   <br>
+
+		爱好:
+		<input type="checkbox" name="hobby">足球 
+		<input type="checkbox" name="hobby">篮球 
+		<input type="checkbox" name="hobby">乒乓球 
+		<input type="checkbox" name="hobby">排球 
+		<input type="checkbox" name="hobby">棒球
+		
+		<!-- checkbox ="复选框" -->   <br>
+
+		搜索:
+		<input type="button" value="搜索">
+
+		<!-- button ="普通按钮"
+		     value ="input控件中的默认文本值" -->   <br>
+
+		提交:
+		<input type="submit" value="提交表单">
+		<input type="image" src="#">
+
+		<!-- submit ="提交按钮"  
+			 image ="图像提交按钮" -->   <br>
+
+		重置:
+		<input type="reset" value="重置表单">
+
+		<!-- reset ="重置按钮" -->   <br>
+
+		上传头像:
+		<input type="file">
+
+		<!-- file ="文件按钮" -->   <br>
+
+		<hr>
+
+		<h3>label(label)标签的使用</h3> 
+
+		<label>输入账号:<input type="text"></label>   <br>
+		<label for="two">输入账号:<input type="text"></label> <input type="text" id="two"><br>
+		
+		<p>1.用lable直接进行包裹input</p>
+		<p>2.如果label里面有多个表单，想定位到某个，可以通过for id 的格式来进行</p>
+		<hr>
+
+		<h3>textarea控件(文本域)的使用</h3>
+		留言板:
+		<textarea>请输入留言</textarea>
+
+		<!-- <textarea cols="每行中的字符数" rows="显行的行数"></textarea> -->
+
+		<hr>
+
+		<h3>下拉菜单,select控件的使用</h3>
+		籍贯:
+		<select>
+			<option>点击选择您的籍贯</option>
+			<option>北京</option>
+			<option>广州</option>
+			<option>上海</option>
+			<option selected="selected">深圳</option> <!-- selected ="默认选中项" -->
+		</select>
+		<select>
+			<option>点击选择您的城市</option>
+			<option>海淀</option>
+			<option>昌平</option>
+			<option>通州</option>
+			<option>大兴</option>
+		</select>
+
+		<hr>
+
+		<h3>表单域form</h3>
+		<form action="#" method="" name="userMessage">
+			用户名:
+		<input type="text" value="用户名">  <br>
+		
+		密码:
+		<input type="password" maxlength="6">  <br>
+		
+		性别:
+		<input type="radio" name="sex" checked="checked">女  
+		<input type="radio" name="sex">男  <br>
+
+		爱好:
+		<input type="checkbox" name="hobby">足球 
+		<input type="checkbox" name="hobby">篮球 
+		<input type="checkbox" name="hobby">乒乓球 
+		<input type="checkbox" name="hobby">排球 
+		<input type="checkbox" name="hobby">棒球<br>
+
+		搜索:
+		<input type="button" value="搜索"><br>
+
+		提交:
+		<input type="submit" value="提交表单">
+		<input type="image" src="#"><br>
+
+		重置:
+		<input type="reset" value="重置表单"><br>
+
+		上传头像:
+		<input type="file"><br>
+		</form>
+		<p>常用属性</p>
+		<dl>
+			<dt>Action</dt>
+			<dd>action属性用于指定接收并处理表单数据的服务器程序的url地址</dd>
+			<dt>method</dt>
+			<dd>用于设置表单数据提交方式，取值为get或post</dd>
+			<dt>name</dt>
+			<dd>用于指定表单的名称，以区分同一页面中的多个表单</dd>
+		</dl>
+
+	</body>
+</html>
