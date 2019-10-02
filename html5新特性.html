@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html5新标签</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>  语义: 定义页面的头部  页眉</header>
+	<nav>  语义: 定义导航栏</nav>
+	<footer>  语义: 定义页面底部、页脚</footer>
+	<article>  语义: 定义文章</article>
+	<section>  语义: 定义区域</section>
+	<aside>  语义: 定义侧边</aside>
+	<br> <br> <br>
+	<hr>
+	<input type="text" value="输入明星" list="star">    <!-- input 里用 list -->
+	<datalist id="star">         <!-- datalist 里面用 id 来实现和 input 链接 -->
+		<option>刘德华</option>
+		<option>刘若英</option>
+		<option>刘晓庆</option>
+		<option>郭富城</option>
+		<option>张学友</option>
+	</datalist>            <br> <br>
+	<p>datalist 标签定义选项列表。与 input 元素搭配使用</p>
+	<br> <br> <br> <br> <br> <br>
+
+	<hr>
+
+	<fieldset>
+		<legend>用户登录</legend>
+		用户名:<input type="text">   <br>
+		密  码:<input type="password" name="">
+	</fieldset>      <br> <br>
+	<p>fieldset元素可将表单内的相关元素分组，打包  和 legnd 搭配使用</p>
+	<br> <br>
+	<hr>
+	<fieldset>
+		<legend>html5 新增的 input type 类型</legend>
+		<form action="">
+			邮箱: <input type="email"> <!--  邮箱格式 --> <br>
+			手机: <input type="tel">  <!-- 手机格式 数字 --> <br>
+			数字: <input type="number">   <!-- 只能是数字 --> <br>
+			url: <input type="url">  <!-- 网址格式 --> <br>
+			搜索: <input type="search">  <!-- 搜索框 --> <br>
+			区域（自由滑动块）: <input type="range">  <!-- 自由拖动滑块 --> <br>
+			时间: <input type="time">  <!-- 小时、分钟 --> <br>
+			年月日: <input type="date"> <!--  年月日 --> <br>
+			时间: <input type="datetime">  <!-- 时间 --> <br>
+			月份: <input type="month"> <!-- 月年  --> <br>
+			星期: <input type="week">  <!-- 星期 年 --> <br>
+			颜色: <input type="color"> <!-- 颜色 -->  <br>
+			<input type="submit">
+		</form>
+	</fieldset>
+	<hr>
+	<br> <br> <br>
+	<fieldset>
+		<legend>html5 新增表单属性</legend>
+		<form>
+			用户名: <input type="text" placeholder="请输入用户名" autofocus="autofocus">   <br>
+			上传头像:<input type="file" multiple="multiple">  <br>
+		</form>
+		<form>
+			<h4> 自动记录完成 </h4>
+			<p>1.autocomplete 首先需要提交按钮</p>
+			<p>2.这个表单必须给名字</p>
+			姓名: <input type="text" autocomplete="autocomplete" name="userName">
+			<input type="submit" value="提交">
+		</form>
+
+		昵称: <input type="text" required="required" accesskey="s">  <br>
+	</fieldset>
+
+</body>
+</html>
